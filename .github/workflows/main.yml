@@ -35,4 +35,4 @@ jobs:
     - name: Install Surge
       run: npm install --global surge
     - name: Deploy to surge
-      run: surge ./reactapp afnanreactworkflow.surge.sh --token ${{ secrets.TOKEN }}  
+      run: surge ./build afnanreact.surge.sh --token ${{ secrets.TOKEN }}  
